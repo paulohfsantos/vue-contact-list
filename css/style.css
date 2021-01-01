@@ -29,6 +29,9 @@ body {
     padding: .5rem 0;
     border-bottom: 1px solid #317955;
 }
+.btn-add {
+    display: inline-block;
+}
 button {
     background-color: #fff;
     color: #43a775;

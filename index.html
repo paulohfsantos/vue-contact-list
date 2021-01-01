@@ -12,17 +12,20 @@
         <div id="app">
             <div class="container">
                 <div class="name-box">
-                    <label>Type a name:</label>
+                    <label>Digite um nome:</label>
                     <input type="text" v-model="inputName" @keyup.enter="press">
-                    <button @click="add">Add</button>
+                    <div class="btn-add" v-if="showName">
+                        <button @click="add">Add</button>
+                    </div>
+                    <span>{{aviso}}</span>
                 </div>
 
                 <div class="result-box">
                     <ul>
                         <li v-for="item in lista">{{item}}</li>
                     </ul>
-                    <span> Total de nomes: {{lista.length}}</span>
-                    <button @click="clear">Clear</button>
+                    <span> {{totalTexto}}</span>
+                    <button @click="clear">Limpar</button>
                 </div>
             </div>
             
