@@ -31,11 +31,8 @@ let app = new Vue({
             this.inputName = ''
             this.showName = false
         },
-        press: function (e) {
-            if (e.keyCode === 13) {
-                this.add()
-                console.log('enter')
-            }
+        press: function () {
+            this.add()
         },
         clear: function () {
             this.lista = []
